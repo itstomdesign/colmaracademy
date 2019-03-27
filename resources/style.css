@@ -98,7 +98,7 @@ html {
     color: white;
 }
 
-/* Lead Image */
+/* Main Content */
 
 .main-content-container {
     display: flex;
@@ -239,4 +239,131 @@ html {
 .learning-block-text p {
     font-weight: lighter;
     line-height: 1.5rem;
+}
+
+/* Thesis Exhibit */
+
+.thesis-main-content-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.thesis-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.thesis-content-container h2 {
+    text-align: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 2rem;
+}
+
+.thesis-content-lead-video {
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 24px;
+}
+
+.thesis-content-lead-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.thesis-content-lead-video h3{
+    font-size: 2rem;
+}
+
+.thesis-content-text {
+    line-height: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.thesis-content-supports {
+    width: 35%;
+}
+
+.thesis-content-block-one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.thesis-content-block-image {
+    width: 35%;
+}
+
+.thesis-content-block-image-text {
+    margin-bottom: 15px;
+    margin-left: 1.5rem;
+}
+
+.thesis-content-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.thesis-content-block-image-text h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.thesis-content-text {
+    margin-bottom: 4rem;
+}
+
+/* Footer */
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    margin-left: 24px;
+    margin-right: 24px;
+    background-color: white;
+    margin-top: -8px;
+    height: 64px;
+    justify-content: space-between;
+    border-top: 0.5px solid black;
+}
+
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.footer-logo .academy-text {
+    font-weight: lighter;
+    font-size: 0.75rem;
+}
+
+
+.footer-logo img {
+    height: 64px;
+}
+
+.footer-navigation {
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-navigation a {
+    text-decoration: none;
+    color: black;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: lighter;
 }
