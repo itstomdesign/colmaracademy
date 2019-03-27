@@ -104,6 +104,7 @@ html {
     display: flex;
     flex-direction: row;
     width: 100%;
+    padding-top: 32px;
 }
 
 .main-content-lead-image {
@@ -111,7 +112,7 @@ html {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    margin: 32px 24px;
+    margin: 0px 24px;
 }
 
 .main-content-lead-image img {
@@ -131,33 +132,25 @@ html {
 
 .main-content-supports {
     width: 35%;
-    margin-top: 32px;
-}
-
-.main-content-block-one {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 16px;
 }
 
 .main-content-block {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 8px;
+    padding: 16px;
+}
+.main-content-block.-one {
+    margin-top: -16px; 
 }
 
-.main-content-block-three {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.main-content-block.-silver {
     background-color: silver;
 }
 
-
 .main-content-block-image {
-    width: 35%;
+    max-width: 35%;
+    flex-basis: 35%;
 }
 
 .main-content-block-image img {
@@ -167,13 +160,18 @@ html {
 }
 
 .main-content-block-image-text {
-    margin-bottom: 15px;
-    margin-left: 1.5rem;
+    max-width: 65%;
+    flex-basis: 65%;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .main-content-block-image-text h3 {
     font-size: 1.7rem;
-    margin-bottom: 0.5rem;
+    margin: 0;
 }
 
 .main-content-block-image-text a {
@@ -263,7 +261,7 @@ html {
     font-size: 2rem;
 }
 
-.thesis-content-lead-video {
+.main-content-lead-video {
     width: 60%;
     height: fit-content;
     display: flex;
@@ -271,13 +269,13 @@ html {
     margin: 0px 24px;
 }
 
-.thesis-content-lead-video video {
+.main-content-lead-video video {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.thesis-content-lead-video h3{
+.main-content-lead-video h3 {
     font-size: 2rem;
 }
 
@@ -290,12 +288,13 @@ html {
     width: 35%;
 }
 
-.thesis-content-block-one {
+.thesis-content-block {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 16px;
+    padding: 16px;
 }
+
 
 .thesis-content-block-image {
     width: 35%;
