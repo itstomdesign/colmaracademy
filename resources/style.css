@@ -54,6 +54,12 @@ html {
     padding-left: 0.5rem;
 }
 
+.header-navigation a:hover{
+    background-color:darkslategray;
+    color: white;
+    padding: 16px 20px;
+}
+
 .icon {
     display:none;
 }
@@ -413,7 +419,25 @@ html {
     margin-right: 24px;
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
+
+.header-navigation ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 12px;
+}
+
+.header-navigation ul a {
+    padding: 0px 40px;
+}
+
+.header-navigation a:hover{
+    background-color:white;
+    color: white;
+    padding: 0px 40px;
+}
+
 
 .header-navigation a {
     text-decoration: none;
@@ -423,8 +447,8 @@ html {
     display: none;
 }
 
-.icon a {
-    display: inherit;
+.icon {
+    display: block !important;
 }
 
 /* Lead Image */
@@ -526,7 +550,7 @@ html {
 
 .main-content-block-image {
     width: 100%;
-    height: 50%;
+    height: 200px;
     max-width: 100%;
     flex-basis: 100%;
 }
@@ -534,11 +558,12 @@ html {
 .main-content-block-image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+  
 }
 
 .main-content-block-image-text {
-    max-width: 100%;
+    min-width: 98%;
     flex-basis: 100%;
     padding-left: 8px;
     padding-top: 20px;
@@ -560,6 +585,216 @@ html {
 
 .main-content-block-image-text p {
     margin-bottom: 0.5rem;
+}
+
+/* Learning */
+
+.lead-learning-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.learning-container {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learning-header h2 {
+    margin-top: 32px;
+    font-size: 2.5rem;
+}
+
+.learning-articles {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.learning-block {
+    width: 100%;
+    margin: 3px;
+    background-color: silver;
+}
+
+.learning-block:hover {
+    background-color: aqua;
+}
+
+
+.learning-block img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    display: none;
+}
+
+.learning-block-text {
+    margin-left: 16px;
+    margin-bottom: 24px;
+    margin-right: 16px;
+}
+
+.learning-block-text h3 {
+    font-size: 1.25rem;
+}
+
+.learning-block-text p {
+    font-weight: lighter;
+    line-height: 1.5rem;
+    display: none;
+}
+
+/* Thesis Exhibit */
+
+.thesis-main-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.thesis-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.thesis-content-container h2 {
+    text-align: center;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 2rem;
+}
+
+.main-content-lead-video {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 0px;
+}
+
+.main-content-lead-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main-content-lead-video h3 {
+    font-size: 2rem;
+    display: none;
+}
+
+.thesis-content-text {
+    line-height: 1.2rem;
+    margin-bottom: 1.5rem;
+    display: none;
+}
+
+.thesis-content-supports {
+    width: 35%;
+}
+
+.thesis-content-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    display: none;
+}
+
+
+.thesis-content-block-image {
+    width: 35%;
+    display: none;
+}
+
+.main-content-block-image.display {
+    display: none;
+}
+
+.main-content-text.display {
+    display: none;
+}
+
+.thesis-content-block-image-text {
+    margin-bottom: 15px;
+    margin-left: 1.5rem;
+    display:
+}
+
+.thesis-content-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.thesis-content-block-image-text h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.thesis-content-text {
+    margin-bottom: 4rem;
+}
+
+.main-content-block-image-text.display {
+    display: none;
+}
+
+/* Footer */
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: white;
+    margin-top: -8px;
+    height: 64px;
+    justify-content: space-between;
+    border-top: 0.5px solid black;
+}
+
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.footer-logo .academy-text {
+    font-weight: lighter;
+    font-size: 0.75rem;
+}
+
+
+.footer-logo img {
+    height: 64px;
+}
+
+.footer-navigation {
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-navigation a {
+    text-decoration: none;
+    color: black;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: lighter;
 }
 
  }
